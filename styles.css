@@ -1,0 +1,75 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 1000px;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #ddebf8;
+    color: #2b2839;
+    border-bottom: 10px solid #d8cefe;
+    border-radius: 10px;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.italic-utility{
+    font-style: italic;
+}
+.border-blue {
+    border: 1px dotted blue;
+}
+
+/* 1. Define the shaking motion using top/left offsets */
+@keyframes shake-position {
+  0% { top: 0px; left: 0px; }
+  20% { top: 1px; left: -2px; }
+  40% { top: -1px; left: 1px; }
+  60% { top: 2px; left: -1px; }
+  80% { top: 1px; left: 2px; }
+  100% { top: 0px; left: 0px; }
+}
+
+/* 2. Apply it on hover */
+.shake-text:hover {
+    position: relative; /* Allows the top/left properties to work */
+    animation: shake-position 0.3s infinite;
+    filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
